@@ -1,0 +1,702 @@
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  :root {
+    --Grey-color: #e0dddd;
+    --Blue-sky: rgb(0, 153, 255);
+  }
+  .body {
+    width: 99%;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 0%;
+    border: 1px solid gray;
+    position: relative;
+  }
+
+  /* ảnh cover */
+
+  .cuttay > img {
+    filter: brightness(40%);
+    max-width: 97%;
+  }
+
+  /* Cắt ảnh che phần cẳng tay như mẫu */
+
+  .cuttay {
+    height: 31rem;
+    overflow: hidden;
+    z-index: 1.6;
+  }
+
+  /* Dòng Tên trên ảnh */
+
+  .name-banner {
+    position: relative;
+  }
+  .name-banner h1 {
+    position: absolute;
+    bottom: 23rem;
+    left: 39%;
+    font-size: 48px;
+    color: white;
+  }
+
+  /* Dòng Span nhỏ trên ảnh */
+
+  .name-banner span {
+    position: absolute;
+    bottom: 21.5rem;
+    left: 43%;
+    font-size: 22px;
+    color: white;
+  }
+
+  /* Thanh Nav-bar */
+
+  .navbar {
+    border: 3px solid var(--Grey-color);
+    width: 97%;
+    margin-left: 1.5%;
+    padding: 0%;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+    padding: 2%;
+    margin: 0%;
+  }
+  .navbar-brand:first-child {
+    padding-left: 6%;
+  }
+  .navbar-brand:nth-child(2) {
+    border-right: 1px solid var(--Grey-color);
+    border-left: 1px solid var(--Grey-color);
+    padding-right: 12%;
+    padding-left: 7%;
+  }
+  .navbar-brand:nth-child(4) {
+    border: 1px solid var(--Grey-color);
+    border-top: none;
+    border-bottom: none;
+    padding-right: 5%;
+    padding-left: 12%;
+  }
+  .navbar-brand:last-child {
+    padding-right: 6%;
+    padding-left: 3%;
+  }
+  .navbar-brand i {
+    color: rgb(0, 174, 255);
+  }
+  .navbar-brand:hover {
+    color: blue;
+  }
+  .navbar-brand:active {
+    color: rgb(239, 12, 12);
+  }
+  .navbar-brand:link {
+    color: black;
+  }
+  .navbar-brand:visited {
+    color: black;
+  }
+
+  /* avatar giữa nav bar */
+
+  .avatar {
+    position: absolute;
+    border: 10px solid #f7f7f7;
+    border-radius: 50%;
+    width: 18%;
+    height: 300%;
+    top: -100%;
+    left: 41%;
+    z-index: 2;
+  }
+  .avatar img {
+    position: absolute;
+    border-radius: 50%;
+    width: 102%;
+    height: 102%;
+    top: -1%;
+    left: -1%;
+  }
+
+  /* Bảng bao gồm mục tiêu nghề nghiệp và thông tin cá nhân */
+
+  .target-in4 {
+    display: grid;
+    margin: 0% 1.5% 0% 1.5%;
+    grid-template-columns: 50% 50%;
+  }
+
+  /* Bảng mục tiêu nghề nghiệp */
+
+  #target {
+    background-color: rgba(236, 232, 232, 0.181);
+  }
+  .section-title1 {
+    text-align: left;
+    padding: 12% 0% 6% 30.5%;
+    font-size: 30px;
+  }
+
+  .target-description {
+    font-size: 16px;
+    text-align: left;
+    line-height: 140%;
+    padding: 0% 10% 20% 30.5%;
+  }
+
+  /* Bảng thông tin cá nhân */
+
+  #personal-info {
+    background-color: rgba(236, 232, 232, 0.501);
+  }
+  .section-title2 {
+    text-align: left;
+    padding: 12% 0% 5% 5%;
+    font-size: 30px;
+  }
+  .ul-info {
+    list-style: none;
+    text-align: left;
+    padding-left: 6%;
+  }
+  .ul-info li span {
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  /* dòng icon cho mục thông tin cá nhân */
+  .icon-information {
+    margin: 5% 0% 5% 6%;
+    color: rgb(0, 174, 255);
+    text-align: left;
+  }
+
+  /* mục các ô thông tin */
+
+  .container1 {
+    width: 97.7%;
+    margin: 5% 2.2% 0% 0%;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5% 2%;
+    margin-left: 1.5%;
+  }
+  .col {
+    border: 1px solid red;
+  }
+
+  /* Mục Item Kinh nghiệm */
+
+  .exp-h1 {
+    font-size: 32px;
+    padding: 10% 0% 10% 0%;
+  }
+
+  /* icon bên cạnh kinh nghiệm và hoạt động */
+  .ic-toolbox {
+    padding: 0% 0% 0% 30%;
+    font-size: 50px;
+    color: gray;
+  }
+
+  /* Ô công ty JSC trong kinh nghiệm */
+
+  .ul-jsc li {
+    list-style: none;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .ul-description {
+    padding: 4% 0% 10% 5%;
+  }
+  .ul-description li::before {
+    content: "- ";
+  }
+
+  /* Chữ hiện tại */
+
+  .job-infor-date {
+    position: relative;
+  }
+  .div-ht {
+    position: absolute;
+    color: #fff;
+    background-color: var(--Blue-sky);
+    font-style: italic;
+    padding: 1px 8px;
+    border-radius: 7px/9px;
+    left: 25%;
+    top: 0%;
+    font-size: 18px;
+  }
+
+  /* node xanh đầu dòng Kinh nghiệm, hoạt động, học vấn */
+
+  .li-jsc {
+    position: relative;
+  }
+
+  .blue-node1 {
+    position: absolute;
+    border: 1px solid var(--Blue-sky);
+    padding: 2%;
+    border-radius: 50%;
+    background-color: var(--Blue-sky);
+    left: -2%;
+  }
+
+  /* Ô hoạt động */
+
+  .act-h1 {
+    font-size: 32px;
+    padding: 10% 5% 10% 0%;
+  }
+
+  /* Ô grid bao trọn cả phần diễn giải hoạt động */
+
+  .ul-act-jsc li {
+    list-style: none;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .ul-act-des {
+    padding: 4% 0% 10% 5%;
+  }
+  .ul-act-des li::before {
+    content: "- ";
+  }
+
+  /* Phần thông tin kỹ năng */
+
+  .skill-h1 {
+    font-size: 32px;
+    padding: 10% 10% 10% 0%;
+  }
+  .ic-tools-2 {
+    padding: 0% 0% 0% 35%;
+    font-size: 50px;
+    color: gray;
+  }
+  .skill-title {
+    text-align: left;
+    padding-left: 12%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .skill-des span {
+    background-color: rgb(175, 171, 171);
+    display: inline-block;
+    height: 0.3rem;
+    width: 4rem;
+    margin: 3% 10% 2% 0%;
+  }
+  .skill-des .span-skill-1 {
+    background-color: rgb(0, 195, 255);
+  }
+
+  /* Phần thông tin học vấn */
+
+  .study-h1 {
+    font-size: 32px;
+    padding: 10% 10% 10% 0%;
+  }
+  .ic-pencil {
+    padding: 0% 0% 0% 35%;
+    font-size: 50px;
+    color: gray;
+  }
+  .ul-stu li {
+    list-style: none;
+    text-align: left;
+    padding-left: 5%;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .ul-stu-des {
+    padding: 4% 0% 10% 5%;
+  }
+  .ul-stu-des li::before {
+    content: "- ";
+  }
+
+  /* Phần thông tin ngôn ngữ */
+
+  .ic-mic {
+    padding: 0% 0% 0% 35%;
+    font-size: 50px;
+    color: gray;
+  }
+
+  .lang-title {
+    text-align: left;
+    padding-left: 3.5rem;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .lang-des span {
+    background-color: rgb(175, 171, 171);
+    display: inline-block;
+    height: 0.3rem;
+    width: 4rem;
+    margin: 3% 5% 2% 0%;
+  }
+  .lang-des .span-skill-1 {
+    background-color: rgb(0, 195, 255);
+  }
+
+  /* Phần thông tin sở thích */
+
+  .hobby-h1 {
+    font-size: 32px;
+    padding: 0%;
+    padding: 10% 10% 10% 0%;
+  }
+  .ic-telescope {
+    padding: 0% 0% 0% 35%;
+    font-size: 50px;
+    color: gray;
+  }
+
+  /* Icon trong phần sở thích */
+
+  .flex-icon {
+    display: flex;
+    margin-left: 3%;
+  }
+  .ic-megaphone {
+    color: var(--Blue-sky);
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1.04rem 0.9rem 1.04rem 0.9rem;
+  }
+  .ic-strategy {
+    color: var(--Blue-sky);
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 0.7em 0.9em 0.7em 0.9em;
+  }
+  .ic-hotairballoon {
+    color: var(--Blue-sky);
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 0.7em 0.8em 0.7em 0.8em;
+  }
+  .ic-basket {
+    color: var(--Blue-sky);
+    font-size: 24px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 0.7em 0.6em 0.7em 0.6em;
+  }
+
+  /* Nhóm các sở thích theo các icon */
+
+  .hobby-des {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    margin-left: 7%;
+  }
+
+  /* Chứng chỉ và giải thưởng */
+
+  #certificate {
+    background-color: rgba(236, 232, 232, 0.501);
+    margin: -1em 1.3em;
+    padding: 3rem 0rem 5rem 0rem;
+    margin-top: 5%;
+  }
+  /* Tiêu đề chứng chỉ giải thưởng */
+  .cer-title {
+    padding: 0% 65% 3% 0%;
+  }
+  /* hình ảnh certificate */
+  #certificate img {
+    width: 20rem;
+    height: auto;
+  }
+  /* 2 chứng chỉ dòng trên */
+  .web-js {
+    display: flex;
+    padding-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-bottom: 2px solid #d6c08d;
+  }
+  .cert-web,
+  .cert-js {
+    display: flex;
+  }
+  .web-js ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 2%;
+    line-height: 1.5em;
+  }
+  .web-js ul li:first-child {
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+  }
+  .web-js ul li:nth-child(2),
+  .web-js ul li:last-child {
+    color: gray;
+  }
+  .cert-web {
+    border-right: 2px solid #d6c08d;
+  }
+  .cert-js {
+    margin-left: 1%;
+  }
+
+  /* Chứng chỉ dòng dưới */
+
+  .cert-data {
+    display: flex;
+    padding-top: 4%;
+    margin-left: 3%;
+  }
+  .cert-data ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 1%;
+    line-height: 1.5em;
+  }
+  .cert-data ul li:first-child {
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+  .cert-data ul li:nth-child(2),
+  .cert-data ul li:last-child {
+    color: gray;
+  }
+
+  /* Dự án */
+
+  #project h1 {
+    text-align: left;
+    margin: 4% 0% 1% 2.5%;
+  }
+  #project > .container-pj {
+    display: flex;
+  }
+
+  /* hình ảnh dự án */
+
+  #project img {
+    width: 90%;
+  }
+  .pj-img1 {
+    padding-bottom: 11%;
+  }
+  .pj-img2 {
+    padding-bottom: 13%;
+  }
+
+  /* Khoảng cách các dự án */
+  .du-an-1,
+  .du-an-3 {
+    margin: 0%;
+  }
+
+  /* Dòng đầu tiên dưới hình ảnh */
+
+  .div1 {
+    border: 1px solid gray;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 4% 0% 4% 7%;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0% 5%;
+  }
+
+  /* Dòng thứ 2 dưới hình ảnh */
+
+  #project .div2 {
+    border: 1px solid gray;
+    border-top: none;
+    text-align: left;
+    padding: 4% 0% 4% 10%;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0% 5%;
+  }
+  .span2 {
+    padding-left: 10%;
+  }
+  .span3 {
+    padding-left: 10%;
+  }
+  #project .div2 .span {
+    color: gray;
+  }
+  #project .div2 .span i {
+    padding-left: 0.5%;
+  }
+  #project .div2 .span1 {
+    border: 1px solid rgb(0, 153, 255);
+    border-radius: 9rem/9rem;
+    padding: 0.2rem 0.5rem;
+    background-color: rgb(0, 153, 255);
+    color: white;
+  }
+
+  /* Dòng thứ 3 dưới hình ảnh */
+
+  table {
+    width: 100%;
+  }
+  .tb3 {
+    display: flex;
+    border: 1px solid gray;
+    border-top: none;
+    margin-left: 5%;
+    padding-left: 5%;
+    color: gray;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #tb3-spec1 {
+    width: 53%;
+    text-align: left;
+    padding-top: 2%;
+  }
+  #tb3-spec2 {
+    padding-top: 2%;
+    width: 33%;
+    text-align: left;
+  }
+  #tb3-spec3 {
+    padding-top: 2%;
+    width: 35%;
+    text-align: left;
+  }
+  .tb3 p:last-child {
+    text-align: left;
+    padding-left: 0%;
+    padding-right: 20%;
+  }
+  /* Dòng thứ 4 dưới hình ảnh */
+
+  .tb4 {
+    display: flex;
+    border: 1px solid gray;
+    border-top: none;
+    margin-left: 5%;
+    padding-right: 4%;
+    color: gray;
+    width: 90%;
+    font-size: 16px;
+  }
+  .tb4 p:first-child {
+    padding: 0% 0% 0% 5%;
+    text-align: left;
+    padding-top: 2%;
+    width: 37%;
+  }
+  .tb4 p:last-child {
+    text-align: left;
+  }
+
+  /* Dòng thứ 5 dưới hình ảnh */
+
+  .tb5 {
+    display: flex;
+    border: 1px solid gray;
+    border-top: none;
+    margin-left: 5%;
+    padding-right: 4%;
+    color: gray;
+    width: 90%;
+    font-size: 16px;
+  }
+  .tb5 p:first-child {
+    padding: 0% 0% 0% 5%;
+    text-align: left;
+    padding-top: 2%;
+    width: 34%;
+  }
+  .tb5 p:last-child {
+    text-align: left;
+    padding-top: 2%;
+  }
+
+  /* Link các dự án */
+
+  .div1 a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1% 4% 5% 0%;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    background-color: #999;
+    border-radius: 15px;
+    box-shadow: 0 9px #d0cccc;
+  }
+  .div1 a:hover {
+    color: red;
+    background-color: #666;
+  }
+  .div1 a:visited {
+    color: black;
+  }
+  .div1 a:active {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+  /* Dòng footer dưới cùng */
+
+  #footer {
+    background-color: #f7f7f7;
+    padding: 3% 0%;
+    margin: 3% 1.5%;
+  }
+  #footer li {
+    display: inline-block;
+    list-style: none;
+    color: gray;
+    padding-right: 5%;
+    padding-left: 7%;
+    padding-top: 2%;
+  }
+  .footer-icon {
+    position: relative;
+  }
+  #footer i {
+    position: absolute;
+    color: rgb(0, 153, 255);
+    font-size: 50px;
+  }
+  .icon-facebook-circled,
+  .icon-linkedin-circled,
+  .icon-github-circled {
+    left: 0%;
+    top: 0%;
+  }
+}
